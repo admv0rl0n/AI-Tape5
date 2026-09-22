@@ -1,6 +1,4 @@
-# AI-Tape5
-Version 5
-
+Here is the updated `README.md` that keeps the super-simple user guide upfront and adds the complete breakdown of all **Tape Classes**, ensuring users know exactly which class to pick for their specific project stage.
 
 ---
 
@@ -72,7 +70,11 @@ AI Tape 5.0 defines specific classes to declare *why* an artifact exists. Class 
 ## Core Architecture & Philosophy
 
 * **The Floor is Sacred:** 5.0 wraps around a frozen, unmodified 4.1.8 reference floor. Minimal basic restore behaves identically to 4.1.8.
+
+
 * **The Anti-Shredding Firewall:** Models naturally default to lossy summaries (*"applied standard configurations"*). AI Tape 5.0 explicitly defines **Shredding** as a failure mode and forces the Recorder to preserve core technical parameters, metrics, and Rejection Rationales.
+
+
 * **Epistemic Source Bounding:** The Recorder is strictly bound to visible source material and is forbidden from hallucinating or synthesizing project state to fill empty structural fields.
 
 

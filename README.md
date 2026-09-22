@@ -38,32 +38,15 @@ The model synthesizes current state, separates immutable facts from malleable st
 
 AI Tape 5.0 defines specific classes to declare *why* an artifact exists. Class creates no authority, but dictates the scope and depth of the handoff:
 
-| Tape Class | Role & Purpose | When to Use |
-| --- | --- | --- |
-| **`Reference`** | Teaches or defines specification rules.
-
- | When distributing the raw AI Tape standard itself. |
-| **`Master`** | Anchors a deliberately consolidated project state.
-
- | When cleaning house, rebasing lineage, and establishing a new canonical base. |
-| **`Complete`** | Provides a combined handover for full continuation.
-
- | When handing a project over to a fresh instance with zero prior context. |
-| **`Historical`** | Preserves the useful project journey, past decisions, and lessons.
-
- | When archiving a major milestone or audit trail. |
-| **`Universal`** | Integrates consolidated state, handover, and historical journey.
-
- | For deep recovery across complex, multi-phase engineering projects. |
-| **`Operational`** | Continues active day-to-day work.
-
- | For standard end-of-session checkpoints during active development. |
-| **`Exchange`** | Crosses systems, models, or context boundaries.
-
- | When migrating work between entirely different AI platforms or models. |
-| **`Forensic`** | Supports audit and reconstruction.
-
- | When analyzing a failure mode, security breach, or regression trace. |
+A user can request AI 'Make a (insert option from below) tape.. and it will do so.. 
+- **Reference:** Teaches or defines specification.
+- **Master:** Anchors a deliberately consolidated project state.
+- **Complete:** Provides a combined handover for continuation.
+- **Historical:** Preserves useful project journey and past decisions.
+- **Universal:** Integrates consolidated state, handover, and historical journey.
+- **Operational:** Continues active work.
+- **Exchange:** Crosses systems, models, or context boundaries.
+- **Forensic:** Supports audit and reconstruction.
 
 ---
 

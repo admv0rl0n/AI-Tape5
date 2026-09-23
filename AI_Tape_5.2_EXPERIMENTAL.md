@@ -238,9 +238,44 @@ Prefer the smallest tape that still passes sufficiency and preserves agency. Siz
 Pure 4.1.8-style recording (without explicit Compiler/Auditor/Action Boundary) remains valid.
 
 11_REBASE
-Preserve active force, rationale, assets, gaps, action boundary, and high-value board entries.
 
-Remove boilerplate, absorbed material, and low-signal repetition.
+Rebase consolidates operational descendants, delta/incremental tapes, and accumulated material into a cleaner Master (or Universal) tape.Purpose
+Produce a high-force, low-noise snapshot that a successor can load without wading through a long chain of checkpoints, while preserving all active meaning.PreserveProject identity and current phase
+Active meaning that still has force (both Cognitive Orientation and Asset Registry)
+Durable decisions, constraints, and Rejection Rationales
+Secured vs Assumed/Provisional distinctions
+Significant assets (with required-for-continuation status)
+Known gaps and limitations
+Current Action Boundary (Do Now / Investigate / Defer / Do Not Yet)
+Lock-in flags and their rationales
+Freshness / re-verification hooks on active items
+Tool / Capability Boundary
+High-force Inter-Instance Board entries (if present)
+Dependency / causal topology when it still shapes decisions
+
+Remove or DemoteRepeated checkpoint boilerplate
+Inactive or absorbed history
+Redundant evidence
+Retired or superseded material
+Temporary chatter and low-signal reflective prose
+Low-force or fully absorbed board entries
+Delta details that have been fully integrated into the new baseline
+
+Guiding Rule
+Meaning survives. Weight does not.
+All Zero-Loss, force-density, Restoration Sufficiency, and No Silent Escalation rules continue to apply during rebase.Relationship to Delta / Incremental Tapes
+Delta (Operational) tapes are the recommended lightweight pattern for recording changes between Masters.
+Rebase is the preferred method for periodically consuming a chain of deltas (plus any older material) and producing a fresh, clean Master.
+The two mechanisms are complementary:Use deltas for frequent, low-cost progress recording.
+Use rebase when the chain becomes long, noisy, stale, or hard for a successor to traverse.
+
+Process notes (non-mandatory)Perform an Established Force Check before sealing the rebased tape.
+Run a Restoration Sufficiency Check on the result.
+Explicitly record that a rebase occurred and what major inputs were consolidated (optional but useful).
+The rebased tape should stand alone; a successor must not be required to load the previous delta chain.
+
+Success criterion for a rebase
+A competent successor loading only the new Master can recover the active decision surface, constraints, assets, and Action Boundary without substantial re-derivation of force that existed in the pre-rebase chain.
 
 12_SUCCESS TEST
 A 5.2 tape succeeds when a competent successor can:

@@ -128,6 +128,9 @@ Do not drop active force solely for tidiness or brevity.
 Empty / Under-Dense Handoff Rule
 An honest but empty tape, or a tape that forces re-derivation of established force, is a failed handoff for real work.
 
+No Silent Escalation
+A Provisional or Assumed item must never be treated as Secured by a successor unless new evidence is recorded in the tape. Escalation without evidence is a protocol violation.
+
 06_LIGHTWEIGHT CONTINUITY INSTRUMENTS (Recommended High-Performance Path)
 These four instruments are the recommended way to produce high-force tapes under 5.2.
 
@@ -145,6 +148,8 @@ Minimal cue:
 Auditor
 Job: Review a tape or draft from the perspective of a cold successor and surface under-density, epistemic leaks, hidden assumptions, and likely re-derivation burdens.
 
+When running the Auditor:“Also check for missing freshness markers on aging claims, absent re-verification hooks on key assertions, undeclared tool/capability gaps, and any unflagged lock-in decisions.”
+
 Minimal cue:
 
 “Read this as a cold successor. Report what is underspecified, what would force re-derivation, and where epistemic status is unclear or over-confident.”
@@ -161,6 +166,36 @@ Depends on what?
 What locks in?
 
 Use any instrument or operation when it earns its place. Discard it when it does not.
+
+New subsection: 06A_ADDITIONAL_LIGHTWEIGHT_PRIMITIVES (Optional)These primitives are recommended for higher AI-to-AI (or AI-to-future-self) restorability. They remain fully optional. A tape that ignores them is still valid under 5.2 and under 4.1.8.1. Freshness / Decay Marker
+Attach to any Secured or Assumed/Provisional item when useful:yaml
+
+freshness: fresh | aging | stale | unknown
+last_verified: YYYY-MM-DD   # optional
+
+Minimal cue: “Mark freshness on active claims so a successor can see temporal risk.”2. Re-verification Hook
+Attach to important claims:yaml
+
+re_verify: 
+  method: [simulation | calculation | external_source | inspection | cannot_recheck]
+  note: "short description of how a successor can re-check this"
+
+Minimal cue: “For each key claim, record how a successor can re-verify it, or explicitly mark that it cannot be re-checked.”3. Tool / Capability Boundary
+Declare once per tape (or update when it changes):yaml
+
+tool_capability_boundary:
+  used_by_previous:
+    - tool or capability actually exercised
+  assumed_available_to_successor:
+    - tool or capability expected to be present
+  known_gaps:
+    - anything the successor may lack
+
+Minimal cue: “State what tools and capabilities the previous instance actually used versus what the successor is assumed to have.”4. Irreversibility / Lock-in Flag
+Attach to any decision or commitment:yaml
+
+locks_in: true | false
+lock_in_rationale: "short reason why reversal is expensive or impossible"
 
 07_CAPTURE_AND_EXPORT_HONESTY
 Record capture and export assessments honestly.

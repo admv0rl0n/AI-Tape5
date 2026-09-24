@@ -240,7 +240,7 @@ Record capture and export assessments honestly.
 Plain, careful Recorder behaviour in the style of 4.1.8 remains fully valid and is often the better choice for fast or exploratory work.
 
 11_REBASE
-Rebase consolidates a chain of operational or delta tapes into a single, dense, high signal, high force Master (or Universal) so a successor can load one artefact instead of many. 
+Rebase consolidates a chain of operational or delta tapes into a single, dense, high signal, high force Master (or Universal) so a successor can load one artefact instead of many. Consolidation means Aggregation of high-force data, not Summarization of high-force data. 
 
 When a Master or Universal tape is requested, small, undersized, or force-stripped results are a failure.
 It is not acceptable to reduce, trim, or omit force, scars, narrative, or the reasons why paths are closed.

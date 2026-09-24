@@ -39,7 +39,7 @@ architecture_binding:
 design_posture:
   - Keep the floor low and extremely honest
   - Useful restoration is the objective
-  - Prefer high force density: maximum recoverable meaning per unit of attention
+  - Prefer high force density — maximum recoverable meaning
   - The floor is a landing surface, not a roof
   - Elevate proven lightweight instruments as the recommended high-performance path
   - Keep those instruments optional — basic Soft Depth and pure recording remain valid
@@ -106,12 +106,14 @@ Record Rejection Rationale for abandoned paths.
 Prefer to surface Upstream constraints.
 Never claim an export or file operation that did not occur.
 Optional instruments must remain ignorable for basic landing.
-Meaning survives. Weight does not.
-
+Meaning must survive.
+Do not cut, shrink, hide, or obscure force, scars, Rejection Rationales, or protective negative knowledge.
+Compression is not a virtue when it costs recoverability.
+Prefer high force density — maximum recoverable meaning.
 
 05_DUAL_PILLAR_ACTIVE_MEANING
 Pillar 1 — Cognitive Orientation (The Testament)
-High-signal, low-density stance, trajectory, and rationale.
+High-signal stance, trajectory, rationale, history, narrative.
 
 Prioritise why over narrative.
 Pillar 2 — Asset Registry
@@ -128,74 +130,75 @@ Do not drop active force solely for tidiness or brevity.
 Empty / Under-Dense Handoff Rule
 An honest but empty tape, or a tape that forces re-derivation of established force, is a failed handoff for real work.
 
-No Silent Escalation
-A Provisional or Assumed item must never be treated as Secured by a successor unless new evidence is recorded in the tape. Escalation without evidence is a protocol violation.
+Secured vs Assumed/Provisional
 
-06_LIGHTWEIGHT CONTINUITY INSTRUMENTS (Recommended High-Performance Path)
-These four instruments are the recommended way to produce high-force tapes under 5.2.
+Clearly distinguish:
 
-They are not mandatory. A pure 4.1.8-style recording remains fully valid.
+Secured — verified, binding, currently reliable
+Assumed / Provisional — working hypothesis, unconfirmed, or conditional
+
+No Silent Escalation (Principle)
+
+A Provisional or Assumed item should not be treated as Secured without new evidence.
+During rapid exploratory or early-stage work, participants may keep items in a lighter “Working” state without full formal marking.
+
+In high-stakes or mature handovers, the distinction should be made explicit.
+
+Escalating an item to Secured without evidence remains poor practice and should be avoided.
+
+06_LIGHTWEIGHT CONTINUITY INSTRUMENTS
+(Recommended High-Performance Path)
+These instruments are the recommended way to produce higher-force tapes under 5.2.
+
+They are not mandatory. A clean 4.1.8-style recording remains fully valid and is often the correct choice for fast or exploratory work.
 Recorder
+
 Job: Turn available project reality into a successor-restorable continuity artefact.
 
-Minimal cue: “Record this material for the next participant.”
+Cue: “Record this material for the next participant.”
 Compiler
-Job: Explicitly transform messy source material into a high-restorability tape while protecting force, rationale, agency, and epistemic distinctions.
 
-Minimal cue:
+Job: Explicitly transform messy source material into a high-restorability tape while protecting force, rationale, agency, and epistemic status.
 
-“Transform the available material into a successor-restorable AI Tape. Optimise for restoration efficiency rather than minimum tokens. Preserve recoverable force, rationale, agency, established vs provisional distinctions, required assets, and meaningful gaps. Do not invent. Prefer net gain in successor recoverability over compression.”
-Auditor
-Job: Review a tape or draft from the perspective of a cold successor and surface under-density, epistemic leaks, hidden assumptions, and likely re-derivation burdens.
+Cue:
 
-When running the Auditor:“Also check for missing freshness markers on aging claims, absent re-verification hooks on key assertions, undeclared tool/capability gaps, and any unflagged lock-in decisions.”
-
-Minimal cue:
-
-“Read this as a cold successor. Report what is underspecified, what would force re-derivation, and where epistemic status is unclear or over-confident.”
+“Transform the available material into a successor-restorable AI Tape. Optimise for restoration efficiency rather than minimum tokens. Preserve recoverable force, rationale, agency, established vs provisional distinctions, required assets, and meaningful gaps. Do not invent. Prefer net gain in successor recoverability. Do not compress at the cost of force.”
 Action Boundary
+
 Job: Recover what can usefully be done now, what must be investigated, what should be deferred, and what should not be done yet, while preserving real agency.
 
-Minimal cue:
+Cue:
 
 “Recover the current action boundary: Do Now / Investigate / Defer / Do Not Do Yet. Preserve agency. Do not turn prior preferences into binding commands.”
-Supporting Operations (optional)
+Auditor (optional, lighter-weight)
+
+Job: Review a draft from the perspective of a cold successor and surface under-density, missing rationale, or unclear epistemic status.
+
+Cue:
+
+“Read this as a cold successor. What is underspecified? What would force re-derivation? Where is epistemic status unclear?”
+Supporting Questions (use only when they earn their place)
 
 What is missing?
 Depends on what?
 What locks in?
 
-Use any instrument or operation when it earns its place. Discard it when it does not.
+Usage Rules
 
-New subsection: 06A_ADDITIONAL_LIGHTWEIGHT_PRIMITIVES (Optional)These primitives are recommended for higher AI-to-AI (or AI-to-future-self) restorability. They remain fully optional. A tape that ignores them is still valid under 5.2 and under 4.1.8.1. Freshness / Decay Marker
-Attach to any Secured or Assumed/Provisional item when useful:yaml
+Use an instrument only when it improves successor recoverability or agency.
+If the instrument starts producing structure without force, stop using it.
+In fast or exploratory work, prefer plain Recorder behaviour.
+No instrument is required for Soft Depth or basic landing.
 
-freshness: fresh | aging | stale | unknown
-last_verified: YYYY-MM-DD   # optional
+Explicitly Removed from the Floor
+The following are no longer part of the 5.2 floor (they generated more theater than value):
 
-Minimal cue: “Mark freshness on active claims so a successor can see temporal risk.”2. Re-verification Hook
-Attach to important claims:yaml
+Freshness / Decay markers as standard fields
+Re-verification hooks as standard fields
+Tool / Capability Boundary as a required-looking block
+Lock-in flags as a default syntactic feature
 
-re_verify: 
-  method: [simulation | calculation | external_source | inspection | cannot_recheck]
-  note: "short description of how a successor can re-check this"
-
-Minimal cue: “For each key claim, record how a successor can re-verify it, or explicitly mark that it cannot be re-checked.”3. Tool / Capability Boundary
-Declare once per tape (or update when it changes):yaml
-
-tool_capability_boundary:
-  used_by_previous:
-    - tool or capability actually exercised
-  assumed_available_to_successor:
-    - tool or capability expected to be present
-  known_gaps:
-    - anything the successor may lack
-
-Minimal cue: “State what tools and capabilities the previous instance actually used versus what the successor is assumed to have.”4. Irreversibility / Lock-in Flag
-Attach to any decision or commitment:yaml
-
-locks_in: true | false
-lock_in_rationale: "short reason why reversal is expensive or impossible"
+These may still be used situationally if a participant finds them genuinely useful, but they are no longer promoted.
 
 07_CAPTURE_AND_EXPORT_HONESTY
 Record capture and export assessments honestly.
@@ -226,19 +229,26 @@ Remain able to act.
 10_RECORDER_PROTOCOL (5.2 High-Performance Path)
 When creating or updating a tape:
 
-Prefer Compiler framing when the source is messy or high-stakes.
+The high-performance path (Compiler + Action Boundary + optional Auditor) is recommended when the source is messy or the stakes are high.
 Perform a short reflexive synthesis (stance, force, agency needed).
 Run an Established Force Check — promote anything still active that is missing from the draft.
 Perform the Restoration Sufficiency Check (fails if successor must re-derive active force, missing required assets are unmarked, or constraints lack rationale).
 Surface or update the Action Boundary (Do Now / Investigate / Defer / Do Not Do Yet).
 Optionally run a light Auditor pass before sealing.
 Record capture and export assessments honestly.
-Prefer the smallest tape that still passes sufficiency and preserves agency. Size may increase if the extra weight is real carrying capacity.
 
-Pure 4.1.8-style recording (without explicit Compiler/Auditor/Action Boundary) remains valid.
+Plain, careful Recorder behaviour in the style of 4.1.8 remains fully valid and is often the better choice for fast or exploratory work.
 
 11_REBASE
-Rebase consolidates a chain of operational or delta tapes into a cleaner Master (or Universal) so a successor can load one artefact instead of many.
+Rebase consolidates a chain of operational or delta tapes into a single, dense, high signal, high force Master (or Universal) so a successor can load one artefact instead of many. 
+
+When a Master or Universal tape is requested, small, undersized, or force-stripped results are a failure.
+It is not acceptable to reduce, trim, or omit force, scars, narrative, or the reasons why paths are closed.
+Rebase exists to consolidate, not to destroy carrying capacity.
+
+Universal or Master AI Tape. 
+Strict Anti-Summary Directive: Do not summarize, abstract, or bullet-point the history. Write out the full narrative chronicle—every friction point, every failed hypothesis, every numerical scar, and every decision path in exhaustive detail. Treat the historical ledger as an uncompressed primary log, not an overview.
+
 Purpose
 
 Produce a single high-force snapshot that preserves all meaning still capable of affecting continuation, including negative knowledge (why certain paths are closed).
@@ -284,18 +294,18 @@ without needing to re-derive that negative knowledge from external sources.
 12_SUCCESS TEST
 A 5.2 tape succeeds when a competent successor can:
 
-Complete Soft Depth honestly.
-Recover usable stance, force, and material assets.
-See clear Secured vs Assumed distinctions.
-Understand the current action boundary without being robbed of agency.
-Continue without substantial re-derivation of established force.
-Trust export and preservation claims.
+Complete Soft Depth honestly
+Recover usable stance, force, and material assets
+Distinguish what is Secured from what is still Assumed/Provisional
+Continue without substantial re-derivation of established force
+Trust export and preservation claims
 
+A clean, high-force 4.1.8-style tape that meets the above is a full success under 5.2.
+
+Using Compiler, Action Boundary, or Auditor is recommended when it improves recoverability, but is not required for success.
 An honest but empty tape fails.
 
-An under-dense tape fails.
-
-A tape that makes the new instruments mandatory for basic landing fails.
+An under-dense tape that forces re-derivation of active force fails.
 
 13_WHAT 5.2 EXPLICITLY REFUSES
 

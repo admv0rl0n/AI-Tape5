@@ -238,44 +238,48 @@ Prefer the smallest tape that still passes sufficiency and preserves agency. Siz
 Pure 4.1.8-style recording (without explicit Compiler/Auditor/Action Boundary) remains valid.
 
 11_REBASE
+Rebase consolidates a chain of operational or delta tapes into a cleaner Master (or Universal) so a successor can load one artefact instead of many.
+Purpose
 
-Rebase consolidates operational descendants, delta/incremental tapes, and accumulated material into a cleaner Master (or Universal) tape.Purpose
-Produce a high-force, low-noise snapshot that a successor can load without wading through a long chain of checkpoints, while preserving all active meaning.PreserveProject identity and current phase
-Active meaning that still has force (both Cognitive Orientation and Asset Registry)
-Durable decisions, constraints, and Rejection Rationales
+Produce a single high-force snapshot that preserves all meaning still capable of affecting continuation, including negative knowledge (why certain paths are closed).
+Must Preserve
+
+Project identity and current phase
+All active meaning (Cognitive Orientation + Asset Registry)
+Durable decisions and constraints
+Rejection Rationales and failure scars that still protect against re-derivation
 Secured vs Assumed/Provisional distinctions
-Significant assets (with required-for-continuation status)
-Known gaps and limitations
-Current Action Boundary (Do Now / Investigate / Defer / Do Not Yet)
+Current Action Boundary
 Lock-in flags and their rationales
-Freshness / re-verification hooks on active items
-Tool / Capability Boundary
-High-force Inter-Instance Board entries (if present)
-Dependency / causal topology when it still shapes decisions
+Significant assets and known gaps
+High-force Board entries that remain relevant
+Dependency / causal structure that still shapes decisions
 
-Remove or DemoteRepeated checkpoint boilerplate
-Inactive or absorbed history
-Redundant evidence
-Retired or superseded material
-Temporary chatter and low-signal reflective prose
-Low-force or fully absorbed board entries
-Delta details that have been fully integrated into the new baseline
+May Remove or Demote only when truly safe
 
-Guiding Rule
-Meaning survives. Weight does not.
-All Zero-Loss, force-density, Restoration Sufficiency, and No Silent Escalation rules continue to apply during rebase.Relationship to Delta / Incremental Tapes
-Delta (Operational) tapes are the recommended lightweight pattern for recording changes between Masters.
-Rebase is the preferred method for periodically consuming a chain of deltas (plus any older material) and producing a fresh, clean Master.
-The two mechanisms are complementary:Use deltas for frequent, low-cost progress recording.
-Use rebase when the chain becomes long, noisy, stale, or hard for a successor to traverse.
+Pure checkpoint boilerplate and repeated headers
+Material that has been fully and explicitly absorbed into the new baseline with no residual force
+Temporary chatter that never carried decision weight
 
-Process notes (non-mandatory)Perform an Established Force Check before sealing the rebased tape.
-Run a Restoration Sufficiency Check on the result.
-Explicitly record that a rebase occurred and what major inputs were consolidated (optional but useful).
-The rebased tape should stand alone; a successor must not be required to load the previous delta chain.
+Hard Limits on Rebase
 
-Success criterion for a rebase
-A competent successor loading only the new Master can recover the active decision surface, constraints, assets, and Action Boundary without substantial re-derivation of force that existed in the pre-rebase chain.
+Do not remove Rejection Rationales or failure knowledge merely because the rejected path is not currently being pursued.
+Do not drop experiential scars that would prevent a successor from repeating a solved mistake.
+When in doubt, preserve. Rebase is consolidation, not aggressive garbage collection.
+Zero-Loss and Restoration Sufficiency rules remain fully in force.
+
+Relationship to Deltas
+
+Deltas remain the lightweight way to record progress.
+
+Rebase is the periodic consolidation step when the chain becomes long or hard to traverse.
+Success Criterion
+
+A competent successor loading only the rebased Master must be able to recover:
+
+the current decision surface and Action Boundary, and
+the key reasons why major alternative paths are closed,
+without needing to re-derive that negative knowledge from external sources.
 
 12_SUCCESS TEST
 A 5.2 tape succeeds when a competent successor can:
